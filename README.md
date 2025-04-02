@@ -70,16 +70,20 @@ The model outputs a single-channel predicted density map with the same spatial d
 
 ## Mathematical Formulation
 
-The model is trained using a weighted MSE loss function:
+## Mathematical Formulation
 
-\[
-L(\hat{D}, D) = \frac{1}{H \times W} \sum_{x=1}^{H} \sum_{y=1}^{W} w(x, y) \cdot (\hat{D}(x, y) - D(x, y))^2
-\]
+The model is trained using a **weighted Mean Squared Error (MSE)** loss function:
+
+```
+L(D̂, D) = (1 / (H * W)) * Σ_x=1^H Σ_y=1^W [ w(x, y) * (D̂(x, y) - D(x, y))^2 ]
+```
 
 Where:
-- \( \hat{D}(x, y) \): predicted density value
-- \( D(x, y) \): ground truth density
-- \( w(x, y) \): spatial weighting factor, higher in dense areas
+- `D̂(x, y)` is the predicted density value
+- `D(x, y)` is the ground truth density value
+- `w(x, y)` is a spatial weighting factor giving more importance to dense regions
+- `H` and `W` are the height and width of the density map
+
 
 ## Installation
 

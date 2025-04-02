@@ -1,12 +1,5 @@
 # Crowd-Density-Estimation
 
-A comprehensive solution for crowd density estimation using U-Net-based segmentation. This project combines custom-built components for data processing, model training, and visualization to accurately estimate crowd density in images.
-
-## Features
-- **U-Net Architecture**: Utilizes an implementation of the U-Net architecture for semantic segmentation.
-- **Modular Codebase**: Includes reusable components for data handling, training, visualization, and utility functions.
-- **Custom Dataset Support**: Supports loading and processing custom datasets for training and evaluation.
-- **Visualization Tools**: Built-in visualization functions to analyze model predictions and results.
 
 ## Repository Structure
 

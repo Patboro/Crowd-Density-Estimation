@@ -8,7 +8,7 @@ The core of this project is a U-Net architecture implemented in PyTorch, trained
 
 ## Features
 
-- Custom U-Net model with modular encoder-decoder design
+- U-Net model with modular encoder-decoder design
 - Weighted Mean Squared Error loss to emphasize high-density regions
 - Automated training pipeline with support for multiple configurations
 - Visualization tools for density maps and training metrics
